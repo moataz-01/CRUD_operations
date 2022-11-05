@@ -1,0 +1,96 @@
+*{
+    font-family: 'Work Sans', sans-serif;
+}
+
+body {
+    background-color: #e0e0ce;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: 300px;
+    align-items: center;
+    justify-content: center;
+    margin: 75px auto;
+    background-color: #000;
+    /* border: 3px solid rgb(38, 180, 104); */
+    border-radius: 5px;
+}
+
+.container input , .container button{
+    width: 75%;
+    margin: 25px 0;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: large;
+    border-radius: 3px;
+}
+.container input {
+    outline: none;
+    background-color: #e0e0ce;
+    color: black;
+    transition: all 0.1s;
+    border: none;
+    font-weight: bold;
+}
+.container input:focus {
+    border:2px solid #f2af29;
+}
+button {
+    font-weight: bolder;
+    border: none;
+    transition: 0.3s;
+    cursor: pointer;
+    background-color: #87877a;
+}
+button:hover {
+    background-color: #717166;
+}
+table {
+    margin: auto;
+    /* display: none; */
+    opacity: 0;
+}
+
+table th{
+    padding: 15px 30px;
+    border: 0.5px solid black;
+    font-size: 17px;
+    border-radius: 3px; 
+}
+table td {
+    padding: 15px 30px;
+    border: 0.5px solid black;
+    text-align: center;
+    font-size: 17px; 
+}
+table td button {
+    border-radius: 3px;
+    padding: 9px;
+}
+.msg {
+    color: red;
+    display: none;
+}
+@media screen and (max-width:530px) {
+    .container {
+        width: 280px;
+    }
+    table th{
+        padding: 10px;
+        font-size: 14px;
+    }
+    table td {
+        padding: 10px;
+        font-size: 14px; 
+    }
+    table td button {
+        padding: 0px;
+        font-weight: normal;
+    }
+    table td input {
+        width: 50px;
+    }
+}
